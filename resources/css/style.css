@@ -70,7 +70,7 @@ header {
   height: 30rem;
   background-image: url('../glasses-bg.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 25%;
   background-size: cover;
 }
 
@@ -191,44 +191,140 @@ footer img {
 
 @media (max-width: 900px) {
 
-/* navbar amendments on tablet */
+  /* navbar amendments on tablet */
 
-header:before {
-  height: 300px;
-  background-color: red;
-}
 
-header {
-  padding-top: 0;
-  height: 19rem;
-  background-image: url('../glasses-bg.png');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 130%;
+  header {
+    padding-top: 0;
+    height: 22rem;
+    background-image: url('../glasses-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 145%;
   }
 
-.navBar {
-  width: initial;
-}
+  .navBar {
+    width: initial;
+  }
 
-.slogenBox {
-  margin: 5rem 2rem 0 0;
-  padding: 0.75rem 4rem;
-  font-size: 1.2rem;
-}
+  .slogenBox {
+    margin: 5rem 2rem 0 0;
+    padding: 0.75rem 4rem;
+    font-size: 1.2rem;
+  }
 
-/* Company promo amendments to tablet */
+  /* Company promo amendments to tablet */
 
-.promoContainer {
-  width: 70%;
-  padding: 4rem 2rem;
-}
+  .promoContainer {
+    width: 80%;
+    padding: 4rem 2rem;
+  }
 
-.companyInfoTitle {
-  width: 90%;
-}
+  /* Company info amendments to tablet */
 
-.companyInfoContainer {
+  .companyInfoTitle {
+    width: 90%;
+  }
+
+  .companyInfoContainer {
     padding-bottom: 2rem;
+  }
+
+  footer {
+    width: initial;
+  }
+
 }
+
+/*---------------------------------------------------------------------------------*/
+
+/* MEDIA QUERY FOR MOBILE */
+
+@media (max-width: 570px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1rem 0;
+    height: 19rem;
+    background-image: url('../glasses-bg.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .navItem {
+    display: none;
+  }
+
+  .navBar {
+    width: 100%;
+  }
+
+  .navBar:after {
+    content: "Menu";
+  }
+
+  .navLogo span {
+    display: none;
+  }
+
+  .slogenBox {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .promoContainer {
+    flex-direction: column;
+  }
+
+  .promoText {
+    font-size: 0.75rem;
+  }
+
+  .promoItem {
+    padding-top: 0.54rem;
+    height: 7rem;
+  }
+
+  .promoIcon {
+    height: initial;
+    width: auto;
+    padding-bottom: 1rem;
+  }
+
+  .companyInfoContainer {
+    flex-direction: column;
+    margin: 0;
+    width: initial;
+
+  }
+
+  .companyInfo {
+    width: 100%;
+  }
+
+  .companyInfoTitle {
+    width: 100%;
+  }
+
+  .companyInfoText {
+    padding: 1rem 1rem 4rem 1rem ;
+    font-size: 0.77rem;
+  }
+
+  footer {
+    width: initial;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    margin: 0 auto;
+    width: 5rem;
+    height: auto;
+  }
+
 }
