@@ -1,0 +1,35 @@
+
+
+/* Generic styling */
+
+body {
+  font-size: 18px;
+  line-height: 1.4rem;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+.row--spacearound {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.row--spacebetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header {
+  background-color: cadetblue;
+  width: 80%;
+  margin: 0 auto;
+}
