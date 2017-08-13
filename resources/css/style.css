@@ -5,10 +5,11 @@
 body {
   font-size: 18px;
   line-height: 1.4rem;
+  font-family: Helvetica;
 }
 
 a {
-  color: initial;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -28,8 +29,27 @@ a {
 
 }
 
+
+/* Navigation bar styling */
+
 header {
-  background-color: cadetblue;
+  margin: 1rem auto 0 auto;
   width: 80%;
-  margin: 0 auto;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: cadetblue;
 }
+
+.navLogo img {
+  height: 1rem;
+  width: auto;
+  padding-right: 1rem;
+}
+
+.navItem {
+  color: inherit;
+  padding-left: 2rem;
+}
+
+/* Hero module styling */
