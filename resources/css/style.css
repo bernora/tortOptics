@@ -35,10 +35,18 @@ a {
   align-items: flex-start;
 }
 
+.row--start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .column {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: center;
 }
 
@@ -48,6 +56,12 @@ a {
   align-items: flex-start;
 }
 
+.column--bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
 
 /* Header with Hero module styling */
 
@@ -106,7 +120,8 @@ header {
 .promoContainer {
   width: 50%;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 5rem 3rem;
+  font-size: 1rem;
 }
 
 .promoItem {
@@ -114,9 +129,14 @@ header {
   width: 5rem;
 }
 
+.promoIcon {
+  height: 100%;
+}
+
 .promoIcon img {
   width: 3.5rem;
   height: auto;
+  margin: auto;
 }
 
 .promoText {
@@ -148,7 +168,20 @@ header {
 
 .companyInfoText {
   padding-top: 1rem;
+  font-size: 1rem;
 }
 
 
 /* Footer styling */
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem;
+  background-color: azure;
+}
+
+footer img {
+  height: 15px;
+  padding-right: 1rem;
+}
