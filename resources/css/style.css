@@ -28,11 +28,24 @@ a {
   align-items: center;
 }
 
+.row--spacebetween--top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .column {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.column--start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 
@@ -112,3 +125,30 @@ header {
 
 
 /*Company highlights styling*/
+
+.companyInfoContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.companyInfo{
+  width: 39%;
+}
+
+.companyInfoTitle {
+  width: 70%;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: cadetblue;
+  color: white;
+}
+
+.companyInfoText {
+  padding-top: 1rem;
+}
+
+
+/* Footer styling */
